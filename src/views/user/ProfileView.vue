@@ -128,7 +128,7 @@ async function saveProfile() {
     }
     const { data } = await usersApi.updateOwn(payload)
     authStore.user.phone = data.phone || data.user?.phone
-    localStorage.setItem('lunali_user', JSON.stringify(authStore.user))
+    localStorage.setItem('namishop_user', JSON.stringify(authStore.user))
     form.currentPassword = ''
     form.newPassword = ''
     form.confirmPassword = ''
